@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import desktop_resources.GUI;
 // klasse til ansvar for at styre spillet MATADOR
 public class Matador {
 	/*
