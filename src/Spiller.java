@@ -10,6 +10,8 @@ public class Spiller
    private String navn="";
    // Opretter en variable til at holde øje med hvor langt spilleren er nået i spillet.
    private int boardPlads=0;
+   // Opretter en variable til at holde øje med om spilleren er i live.
+   private boolean playerActive=true;
    
    /*
     * Metoder
@@ -35,7 +37,7 @@ public class Spiller
    public void incrementerPlads()
    {
 	   // tjekker loop for spillet Matador.
-	   if(boardPlads>=11)
+	   if(boardPlads>=21)
 	   {
 		   this.boardPlads=1;
 	   }else{
@@ -46,6 +48,16 @@ public class Spiller
    public String getNavn()
    {
 	   return navn;
+   }
+   // metode til at give spillerens status (spiller/spiller ikke).
+   public boolean getPlayerActive()
+   {
+	   return playerActive;
+   }
+   // metode til at sætte spillerens status (spiller/spiller ikke).
+   public void setPlayerActive(boolean playerActive)
+   {
+	   this.playerActive=playerActive;
    }
    // metode til at give spillerens balance.
    public int getBalance()
