@@ -64,11 +64,12 @@ public class Field
 	// metode som retunere prisen for feltet.
 	public void setFeltOwned(boolean bougtOrLost)
 	{
-		this.feltOwned=feltOwned;
+		this.feltOwned=bougtOrLost;
 	}
 	// metode som retunere navnet for feltet.
-	public void getFeltOwner(int bougtOrLost)
+	public void setFeltOwner(int spiller)
 	{
-		this.feltOwner=feltOwner;
+		this.feltOwner=spiller;
 	}
+	
 }
